@@ -15,12 +15,11 @@ public class CORS {
     public CorsConfigurationSource corsConfigurationSource() {
 
         CorsConfiguration configuration = new CorsConfiguration();
-        // <CHANGE> Agregar URLs de Vercel
-        configuration.setAllowedOrigins(List.of(
+
+        // <CHANGE> Usar patrones para permitir todos los subdominios de Vercel
+        configuration.setAllowedOriginPatterns(List.of(
                 "http://localhost:4200",
-                "https://comebien-frontend.vercel.app",
-                "https://comebien-frontend-g1vtvns8u-support-7833s-projects.vercel.app",
-                "https://comebien-frontend-support-7833s-projects.vercel.app"
+                "https://*.vercel.app"
         ));
 
         configuration.setAllowedMethods(List.of(
