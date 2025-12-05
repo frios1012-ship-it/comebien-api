@@ -23,8 +23,8 @@ public class SecurityConfiguration {
             "/swagger-ui.html",
             "/swagger-ui/**",
             "/swagger-resources/**",
-            "/comebien/users/login/**",
-            "/comebien/users/register/**"
+            "/users/login/**",
+            "/users/register/**"
     };
 
     @Bean
