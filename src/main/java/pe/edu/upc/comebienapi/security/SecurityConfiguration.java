@@ -20,11 +20,11 @@ public class SecurityConfiguration {
 
     // 🔓 Endpoints públicos
     private static final String[] AUTH_WHITELIST = {
-            "swagger-ui.html",
-            "swagger-ui/**",
-            "swagger-resources/**",
-            "comebien/users/login/**",
-            "comebien/users/register/**"
+            "/swagger-ui.html",
+            "/swagger-ui/**",
+            "/swagger-resources/**",
+            "/comebien/users/login/**",
+            "/comebien/users/register/**"
     };
 
     @Bean
